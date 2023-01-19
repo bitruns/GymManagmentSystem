@@ -70,7 +70,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+### Node.js + MySQL Gym managment system! Built with passport and sequelizer for authentication and storage. Plans to integrate BCrypt for password encryption.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,8 +207,6 @@ Project Link: [https://github.com/bitruns/GymManagmentSystem](https://github.com
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/bitruns
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/matt-sharpe/
 [product-screenshot]: images/screenshot.png
