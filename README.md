@@ -18,7 +18,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
+
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -28,7 +28,7 @@
 <div align="center">
   <a href="https://github.com/bitruns/GymManagmentSystem"></a>
 
-<h3 align="center">Gym Managment System</h3>
+<h3 align="center">Matthew Sharpe's Gym Managment System</h3>
 
   <p align="center">
     A Simple Gym Managment System made for Naveed Ejaz and Salim Choudhury
@@ -68,9 +68,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!--[![Product Name Screen Shot][product-screenshot]](https://example.com)-->
 
-### Node.js + MySQL Gym managment system! Built with passport and sequelizer for authentication and storage. Plans to integrate BCrypt for password encryption.
+### Node.js + MySQL Gym managment system! <br> Built with passport and sequelizer for authentication and storage. <br> Plans to integrate BCrypt for password encryption.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
