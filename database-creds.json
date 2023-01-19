@@ -1,0 +1,14 @@
+{
+    "SERVER": {
+        "HOST": "localhost",
+        "PORT": "223"
+    },
+    "DB": {
+        "USER": "<DB_USER>",
+        "PASSWORD": "<DB_PASSWORD>",
+        "HOST": "localhost",
+        "DATABASE": "<DB_NAME>"
+    },
+    "SESSION_SECRET": "<SESSION_SECRET>",
+    "COOKIE_SECRET": "<COOKIE_SECRET>"
+}
