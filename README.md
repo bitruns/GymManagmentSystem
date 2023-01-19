@@ -128,9 +128,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Construct Data Structures for member-trainers-admins-timeslot
-    - [ ] MySQL Sequelize models admin-gym-member-trainer-timeslot
-    - [ ] User Auth Passports (local) for admin-member
+- [X] Construct Data Structures for member-trainers-admins-timeslot
+    - [X] MySQL Sequelize models admin-gym-member-trainer-timeslot
+    - [X] User Auth Passports (local) for admin-member
     - [ ] Add menu for trainer with own passport
     - [ ] Possibly encrypt passwords? Bcrypt
 - [ ] Construct Routes for admin-member
