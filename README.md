@@ -80,32 +80,57 @@
 
 * [![Next][Node.js]][Node-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-
+<a name="windowssql">https://www.geeksforgeeks.org/how-to-install-mysql-on-linux/</a>
+<a name="macsql">https://www.geeksforgeeks.org/how-to-install-mysql-on-macos/</a>
+<a name="linuxsql">https://www.geeksforgeeks.org/how-to-install-mysql-on-linux/</a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+# Getting Started
 
-This project uses Node.js with MySQL for the backend, and HTML and Bootstrap as the frontend.
+This project uses Node.js with **DETACHED** MySQL for the backend, and HTML + Bootstrap/CSS as the frontend.
 
-### Prerequisites
+The Node Backend is made to use an external MySQL server for a database. <br><br>
+Hence, the mechanisms for shipping the program to a cloud hosting service are already in place. <br><br>Due to this however, MySQL will need to be installed on YOUR machine, and the database-creds.json file must be populated by you.
+<br><br>
+#### Windows MySQL Installation Guide: [Here](#windowssql) <br>
+#### Mac MySQL Installation Guide: [Here](#macsql) <br>
+#### Linux MySQL Installation Guide (My Setup): [Here](#linuxsql) <br>
+<br>
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  npm install 
-  ```
+&nbsp;&nbsp;&nbsp;&nbsp;Once a database is created (ex: gym_database), and because of the local DB installation, you can populate the "database-creds.json" file with your: <br>
+1. **Root Login information**, 
+2. **Databse Host** <em>(localhost)</em>, 
+3. **Database Port** <em>(default is 3306)</em>,
+4. **Database Name** <em>(tables will be created by script)</em>,
+5. **Node Server Port** <em>(3000 by convention)</em>,
+6. **Node Server Host** <em>(localhost)</em>
+</ol>
+If this were an online service, you would setup accounts of varying security clearances, but for a local database you can use root.
 
-### Installation
+Once the database is setup, proceed to prerequisites and installation.
+# Prerequisites
+1. Install Node.js Latest on your machine
+  - https://nodejs.org/en/download/
+  - Or do ``` nvm install 19.4.0``` to use the LTS used on this project
+
+2. Make sure NPM (node package manager) is installed and updated to LTS
+  - https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+  - Or do ```npm install -g npm@latest``` to update NPM to LTS
+
+ 
+# Installation
+Once Prerequisites are installed do the following
 
 1. Clone the repo
    ```sh
    git clone https://github.com/bitruns/GymManagmentSystem.git
    ```
-2. Install NPM packages/dependencies
+2. Unzip Folder and open GymManagementSystem/ directory with terminal
+
+3. Once in master directory: Install NPM packages/dependencies
    ```sh
    npm install
    ```
@@ -115,11 +140,34 @@ This is an example of how to list things you need to use the software and how to
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+# Usage
+Once all dependencies have been installed use the next two commands to run the app
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+1. Repo comes with prebuilt css files however for development you can enable live scss updates with
+  ```sh
+  npm run csswatch
+  ```
+2. From a terminal different to where you ran csswatch, run the following to start the program
+  ```sh
+  nodemon app.js
+  ```
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+3. Using any web browser (preferrably Chrome), visit
+  ```sh
+  http://localhost:3000
+  ```
+4. Top left is the navigation menu. There are no default member accounts. However there is one admin account initialized when the program was built.
+  ```sh
+  Admin ID: 1
+  Admin Password: password
+  ```
+
+5. In original navigation menu, the options will have changed. Visit the admin dashboard
+  - Here you can create new users by inputing their Name and Password
+    - Once the account is created, a page will display its Name, Password, and **MemberID**
+  - You can retrieve member account data by inputing their ID into the ID bar and pressing request. Invalid MemberIDs will result in nothing.
+
+6. Once a member has been created, logout in the nav menu and access the Member Login. Enter the MemberID and Password, you will be redirected to the member profile management page.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
