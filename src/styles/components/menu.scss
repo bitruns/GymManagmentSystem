@@ -1,0 +1,56 @@
+.menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba($color: #030303be, $alpha: 0.8);
+    opacity: 0.9;
+    z-index: 1000;
+    
+
+    &__link {
+        display: block;
+        margin: 1.6rem 14rem;
+        
+        padding: 0.8rem;
+        font-size: 3rem;
+        
+        background: rgba($color: #fcfcfcbe, $alpha: 0.8);
+        background-size: 200%;
+        color: navy;
+        
+        &:hover {
+            color: lighten(rgb(212, 83, 23), 20%);
+            background-position: 98%;
+            transition: background-position 500ms;
+        }
+    }
+
+    &__contents {
+        text-align: center;
+        margin: 30vh auto;
+        width: 50%;
+        height: 50%;
+    }
+
+    &__close-btn {
+        position: absolute;
+        top: 0;
+        color: white;
+        right: 0;
+        margin: 1rem 2rem;
+        font-size: 3rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.menu .li {
+ margin-top:10px;
+ margin-bottom: 10px;
+}

@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gym Management System</title>
+    <title>Member Login</title>
 
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-    </script>
     <script src="/js/common.js"></script>
-    <script src="/js/front-page.js"></script>
-</head>
+    <script src="/js/loginsignup.js"></script>
 
+</head>
 <body>
     <!-- Navbar -->
     <button class="logo-button"><i class="fa fa-bars"></i></button>
@@ -28,22 +26,22 @@
         <ul id="public-menu" class="menu__contents" style="display: none">
             <li><a href="/" class="menu__link">HOME</a></li>
             <li><a href="#" class="menu__link">ABOUT US</a></li>
-            <li><a href="/member/login" class="menu__link">MEMBER LOGIN</a></li>
-            <li><a href="/admin/login" class="menu__link">ADMIN LOGIN</a></li>            
+            <li><a href="/api/member/login" class="menu__link">MEMBER LOGIN</a></li>
+            <li><a href="/api/admin/login" class="menu__link">ADMIN LOGIN</a></li>            
         </ul>
 
         <!-- User is Member -->
         <ul id="member-menu" class="menu__contents" style="display: none">
             <li><a href="/" class="menu__link">HOME</a></li>
-            <li><a href="/api/member/profile" class="menu__link">PROFILE</a></li>
+            <li><a href="/api/member/profile" class="menu__link">PROFILE + BOOKING</a></li>
             <li><a href="/api/logout" class="menu__link">LOGOUT</a></li>
         </ul>
 
         <!-- User is Member -->
         <ul id="admin-menu" class="menu__contents" style="display: none">
             <li><a href="/" class="menu__link">HOME</a></li>
-            <li><a href="/admin/dashboard" class="menu__link">ADMIN DASHBOARD</a></li>
-            <li><a href="/admin/account" class="menu__link">ADMIN MANAGE OWN ACCOUNT</a></li>
+            <li><a href="/api/admin/dashboard" class="menu__link">ADMIN DASHBOARD</a></li>
+            <li><a href="/api/admin/account" class="menu__link">ADMIN MANAGE OWN ACCOUNT</a></li>
             <li><a href="/api/logout" class="menu__link">LOGOUT</a></li>
         </ul>
 
@@ -53,11 +51,17 @@
         </div>
     </div>
     
-    <!-- LANDING SECTION -->
-    <div class="landing-section">
-        
-        <h1 class="landing-section__title">Sharpe's Gym Management System</h1>
+    <div class="login-container">
+        <h1 class="header">
+            Member Login
+        </h1>
+        <form class="login-form" action="/api/member/login" method="POST">
+            <input type="text" class="membershipNo form-field" name="membershipNo" placeholder="Membership Number" required>
+            <input type="password" class="password form-field" name="password" placeholder="Password" required>
+            <button type="submit" class="btn btn-primary submit-btn">Login</button>
+        </form>
     </div>
+
 
 </body>
 </html>

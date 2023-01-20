@@ -1,14 +1,16 @@
 {
     "SERVER": {
         "HOST": "localhost",
-        "PORT": "223"
+        "PORT": "3000"
     },
     "DB": {
-        "USER": "<DB_USER>",
-        "PASSWORD": "<DB_PASSWORD>",
+        "USER": "root",
+        "PASSWORD": "JunkPass4321",
         "HOST": "localhost",
-        "DATABASE": "<DB_NAME>"
+        "DATABASE": "gym_man",
+        "DIALECT": "mysql",
+        "PORT": "3306"
     },
-    "SESSION_SECRET": "<SESSION_SECRET>",
-    "COOKIE_SECRET": "<COOKIE_SECRET>"
+    "SESSION_SECRET": "sessionsecret123",
+    "COOKIE_SECRET": "cookiesecret123"
 }

@@ -1,0 +1,26 @@
+.landing-section {
+    margin: 0;
+    background-image: url("/img/background.jpeg");
+    background-size: cover;
+    flex-direction: column;
+    position: absolute;
+    z-index: -10;
+    top:0;
+    left:0;
+    right:0;
+    text-align: center;
+    bottom: 0;
+    background-clip: content-box;
+}
+
+.landing-section__title {
+    padding: 20px;
+    margin-top:200px;
+    color: white;
+    background-color: rgba(240, 81, 8, 0.61);
+    font-size: 6rem;
+}
+
+.roles {
+    display: flex;
+}

@@ -133,31 +133,28 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - [X] User Auth Passports (local) for admin-member
     - [ ] Add menu for trainer with own passport
     - [ ] Possibly encrypt passwords? Bcrypt
-- [ ] Construct Routes for admin-member
-  - [ ] Member route populate
-    - [ ] Member Authentication (MUST HAVE)
-    - [ ] POST - Login access point for member
-    - [ ] GET - Account Information retreival access point for member
-    - [ ] POST - Ask for trainer
-    - [ ] PUT - Update Account Info AP for member
-    - [ ] POST - Member timeslot selection
-  - [ ] Admin Route Populate
-    - [ ] Admin Auth (MUST HAVE)
-    - [ ] POST - Login access point for admin to admin dashboard
-    - [ ] POST - Create new Gym
-    - [ ] POST - Create new member
-    - [ ] POST - Create new trainer
-    - [ ] GET - Get Gym info
-    - [ ] GET - Get member info
-    - [ ] GET - Get Trainer info
-    - [ ] PUT - Update Gym info
-    - [ ] PUT - Update member info
-    - [ ] PUT - Update Trainer info
-    - [ ] PUT - Change admin password
+- [x] Construct Routes for admin-member
+  - [x] Member route populate
+    - [x] Member Authentication (MUST HAVE)
+    - [x] POST - Login access point for member
+    - [x] GET - Account Information retreival access point for member
+    - [x] POST - Ask for trainer
+    - [x] PUT - Update Account Info AP for member
+    - [x] POST - Member timeslot selection
+  - [x] Admin Route Populate
+    - [x] Admin Auth (MUST HAVE)
+    - [x] POST - Login access point for admin to admin dashboard
+    - [x] POST - Create new Gym
+    - [x] POST - Create new member
+    - [x] POST - Create new trainer
+    - [x] GET - Get Gym info
+    - [x] GET - Get member info
+    - [x] GET - Get Trainer info
+    - [x] PUT - Update Gym info
+    - [x] PUT - Update member info
+    - [x] PUT - Update Trainer info
+    - [x] PUT - Change admin password
     
-- [ ] Feature 3
-    - [ ] Nested Feature
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
