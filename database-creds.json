@@ -4,13 +4,13 @@
         "PORT": "3000"
     },
     "DB": {
-        "USER": "root",
-        "PASSWORD": "JunkPass4321",
+        "USER": "username",
+        "PASSWORD": "password",
         "HOST": "localhost",
-        "DATABASE": "gym_man",
+        "DATABASE": "example_db",
         "DIALECT": "mysql",
         "PORT": "3306"
     },
-    "SESSION_SECRET": "sessionsecret123",
-    "COOKIE_SECRET": "cookiesecret123"
+    "SESSION_SECRET": "session_secret",
+    "COOKIE_SECRET": "cookie_secret"
 }
