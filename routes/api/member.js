@@ -101,7 +101,7 @@ route.post("/:id/changePassword", async (req, res) => {
         if(req.body.passwordold === member.password){
             if(req.body.passwordnew != ""){
                 member.update({password:req.body.passwordnew})
-                return res.status(200).sendFile("profile.html")            
+                return res.status(200).sendFile(path.join(__dirname, '../../public/member', 'profile.html'))
             }else{
                 return res.status(400).send("New Password cannot be nothing")
             }
