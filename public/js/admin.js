@@ -15,7 +15,7 @@ $(async () => {
 
 });
 
-$(document).ready(async function() {
+$(document).ready( function() {
     $(document).on("click","#usersearchbutton",async function() {
         let html = null;
         const $mainContainer = $(".main-container");

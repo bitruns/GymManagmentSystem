@@ -41,9 +41,12 @@ route.post("/login", authenticateMember)
 // Customer details are kept private, Only Customer can check his details
 route.get("/:id", async (req, res) => {
     try {
-        if (req.user.id != req.params.id) { // Explicit Coersion
-            return res.status(401).send({ err: "Cannot See other Customer's Details" })
+        if (req.user.type!=="admin"){
+            if (req.user.id != req.params.id) { // Explicit Coersion
+                return res.status(401).send({ err: "Cannot See other Customer's Details" })
+            }
         }
+        
 
         const attributes = { exclude: ["password"] }
         const member = await Member.findByPk(req.params.id, {attributes})
