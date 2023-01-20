@@ -80,9 +80,7 @@
 
 * [![Next][Node.js]][Node-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-<a name="windowssql">https://www.geeksforgeeks.org/how-to-install-mysql-on-linux/</a>
-<a name="macsql">https://www.geeksforgeeks.org/how-to-install-mysql-on-macos/</a>
-<a name="linuxsql">https://www.geeksforgeeks.org/how-to-install-mysql-on-linux/</a>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -95,9 +93,9 @@ This project uses Node.js with **DETACHED** MySQL for the backend, and HTML + Bo
 The Node Backend is made to use an external MySQL server for a database. <br><br>
 Hence, the mechanisms for shipping the program to a cloud hosting service are already in place. <br><br>Due to this however, MySQL will need to be installed on YOUR machine, and the database-creds.json file must be populated by you.
 <br><br>
-#### Windows MySQL Installation Guide: [Here](#windowssql) <br>
-#### Mac MySQL Installation Guide: [Here](#macsql) <br>
-#### Linux MySQL Installation Guide (My Setup): [Here](#linuxsql) <br>
+#### Windows MySQL Installation Guide: [Here](https://www.dataquest.io/blog/install-mysql-windows/) <br>
+#### Mac MySQL Installation Guide: [Here](https://www.geeksforgeeks.org/how-to-install-mysql-on-macos/) <br>
+#### Linux MySQL Installation Guide (My Setup): [Here](https://www.geeksforgeeks.org/how-to-install-mysql-on-linux/) <br>
 <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Once a database is created (ex: gym_database), and because of the local DB installation, you can populate the "database-creds.json" file with your: <br>
@@ -168,6 +166,8 @@ Once all dependencies have been installed use the next two commands to run the a
   - You can retrieve member account data by inputing their ID into the ID bar and pressing request. Invalid MemberIDs will result in nothing.
 
 6. Once a member has been created, logout in the nav menu and access the Member Login. Enter the MemberID and Password, you will be redirected to the member profile management page.
+
+7. Both administrators and Members have multi-user support. Because cookies are used and sessions are stored on the DB (you can refresh the page and stay logged in), use chrome incognito instances to test multi-user support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
